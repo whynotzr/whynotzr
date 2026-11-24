@@ -20,19 +20,6 @@
 
 ---
 
-### 💻 `whoami`
-
-<img align="right" width="230" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Coding GIF" />
-
-* ⚡ **Alias :** `whynotzr`
-* 🚀 **Rôle :** Fullstack Developer & Visual Designer
-* 🤖 **Focus :** Bots Discord/Telegram, Outils IA, Apps Web & Branding
-* 🎯 **Mindset :** *Build fast, design clean, automate everything.*
-
-<br clear="right"/>
-
----
-
 ### 🛠️ Tech & Design Stack
 
 <p align="center">
