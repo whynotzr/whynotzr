@@ -6,7 +6,9 @@
 <!-- Titre + Texte animé + Badges -->
 <div align="center">
 
-# ⚡ WHYNOTZR ⚡
+<p align="center">
+  <img src="./neon-title.svg" alt="WHYNOTZR" width="650" />
+</p>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2500&pause=800&color=A855F7&center=true&vCenter=true&width=650&lines=Creative+Developer+%26+Visual+Designer;Discord+Bots+%E2%80%A2+AI+Tools+%E2%80%A2+Web+Apps;Photoshop+%26+Illustrator+Creator" alt="Typing SVG" />
 
