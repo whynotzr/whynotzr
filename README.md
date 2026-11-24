@@ -17,7 +17,9 @@
 <img src="https://img.shields.io/badge/DESIGN-Photoshop_%26_Illustrator-111827?style=for-the-badge&logo=adobe&logoColor=A855F7" alt="Design" />
 
 </div>
-
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=whynotzr&label=PROFILE+VIEWS&color=a855f7&style=for-the-badge" alt="Profile Views" />
+</p>
 ---
 
 ### 🛠️ Tech & Design Stack
