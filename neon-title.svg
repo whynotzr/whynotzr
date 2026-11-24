@@ -2,22 +2,19 @@
   <defs>
     
     <filter id="neon-glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3" result="blur1" />
-      <feGaussianBlur stdDeviation="8" result="blur2" />
-      <feGaussianBlur stdDeviation="16" result="blur3" />
-      <feMerge>
-        <feMergeNode in="blur3" />
-        <feMergeNode in="blur2" />
-        <feMergeNode in="blur1" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#d8b4fe" flood-opacity="1" />
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#a855f7" flood-opacity="0.95">
+        <animate attributeName="stdDeviation" values="6;10;6" dur="2.6s" repeatCount="indefinite" />
+      </feDropShadow>
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#6b21a8" flood-opacity="0.9">
+        <animate attributeName="stdDeviation" values="14;22;14" dur="2.6s" repeatCount="indefinite" />
+      </feDropShadow>
     </filter>
 
-    
     <linearGradient id="violet-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#9333ea" />
-      <stop offset="50%" stop-color="#d8b4fe" />
-      <stop offset="100%" stop-color="#7c3aed" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7e22ce" />
     </linearGradient>
 
     <style>
@@ -28,37 +25,22 @@
         letter-spacing: 10px;
         fill: #f3e8ff;
         stroke: url(#violet-grad);
-        stroke-width: 2px;
+        stroke-width: 2.2px;
         filter: url(#neon-glow);
-        animation: flicker 4s infinite alternate;
       }
       .bolt {
         fill: #e9d5ff;
         stroke: #a855f7;
-        stroke-width: 1.5px;
-        filter: url(#neon-glow);
-        animation: pulse 1.8s ease-in-out infinite alternate;
+        stroke-width: 1.8px;
       }
       .scanline {
         stroke: url(#violet-grad);
-        stroke-width: 2.5;
+        stroke-width: 3;
         stroke-linecap: round;
         filter: url(#neon-glow);
         stroke-dasharray: 260;
         stroke-dashoffset: 260;
-        animation: line-draw 2.5s ease-out forwards;
-      }
-      @keyframes flicker {
-        0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-          opacity: 1;
-        }
-        20%, 24%, 55% {
-          opacity: 0.78;
-        }
-      }
-      @keyframes pulse {
-        from { opacity: 0.8; }
-        to { opacity: 1; }
+        animation: line-draw 2s ease-out forwards;
       }
       @keyframes line-draw {
         to { stroke-dashoffset: 0; }
